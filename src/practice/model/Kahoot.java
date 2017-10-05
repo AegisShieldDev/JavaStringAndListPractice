@@ -29,4 +29,21 @@ public class Kahoot
 		
 		return description;
 	}
+	
+	public String getCreator()
+	{
+		return creator;
+	}
+	public int getLevel()
+	{
+		return level;
+	}
+	public Boolean getIsJumble()
+	{
+		return isJumble;
+	}
+	public int getQuestionCount()
+	{
+		return questionCount;
+	}
 }

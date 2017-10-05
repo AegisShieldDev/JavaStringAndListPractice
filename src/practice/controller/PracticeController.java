@@ -39,11 +39,11 @@ public class PracticeController
 	 */
 	private void fillTheList()
 	{		
-		Kahoot fiftyStates 		= new Kahoot("Kashish",50);
-		Kahoot mySecondKahoot 	= new Kahoot("Ethan", 2);
-		Kahoot bigQuiz 			= new Kahoot("Derek", Integer.MAX_VALUE);
-		Kahoot animalColor 		= new Kahoot("Branton",010);
-		Kahoot presidents 		= new Kahoot("Obama", 44);
+		Kahoot fiftyStates 		= new Kahoot("Kashish",	50);
+		Kahoot mySecondKahoot 	= new Kahoot("Ethan"	,	2);
+		Kahoot bigQuiz 			= new Kahoot("Derek"	,	Integer.MAX_VALUE);
+		Kahoot animalColor 		= new Kahoot("Branton",	010);
+		Kahoot presidents 		= new Kahoot("Obama"	,	44);
 		
 		myKahoots.add(fiftyStates);
 		myKahoots.add(mySecondKahoot);
