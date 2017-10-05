@@ -4,7 +4,7 @@ public class Kahoot
 {
 	private int questionCount;
 	private int level;
-	private String creator;
+	private String creator, topic;
 	private boolean isJumble;
 	
 	public Kahoot()
@@ -13,12 +13,15 @@ public class Kahoot
 		this.level = 1;
 		this.creator = "Nobody";
 		this.isJumble = false;
+		this.topic = "Some topic";
 	}
 	
-	public Kahoot(String creator, int questionCount)
+	public Kahoot(String creator, int questionCount, String topic)
 	{
+		this();
 		this.creator = creator;
 		this.questionCount = questionCount;
+		this.topic = topic;
 	}
 	
 	public String toString()
