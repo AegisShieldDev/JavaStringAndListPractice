@@ -48,6 +48,13 @@ public class PracticeController
 			{
 				popup.displayText(currentCreator.substring(currentLetterIndex, currentLetterIndex + 1));
 			}
+			
+			String topic = currentKahoot.getTopic();
+			
+			for (int letter = topic.length() - 1; letter >= 0; letter -= 1)
+			{
+				popup.displayText(topic.substring(letter, letter + 1));
+			}
 		}
 		System.exit(0);
 	}

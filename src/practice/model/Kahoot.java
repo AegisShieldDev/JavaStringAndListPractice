@@ -49,4 +49,8 @@ public class Kahoot
 	{
 		return questionCount;
 	}
+	public String getTopic()
+	{
+		return topic;
+	}
 }
