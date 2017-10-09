@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
  * @author Wyatt Miller
  * @version 1.0 10.03.2017
  */
-public class PracticeDisplay
+public class PopupDisplay
 {
 	/**
 	 * Displays a popup showing the supplied string to the user.

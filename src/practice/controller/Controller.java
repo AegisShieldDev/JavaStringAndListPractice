@@ -3,17 +3,17 @@ package practice.controller;
 import java.util.List;
 import java.util.ArrayList;
 import practice.model.Kahoot;
-import practice.view.PracticeDisplay;
+import practice.view.PopupDisplay;
 
-public class PracticeController
+public class Controller
 {
-	private PracticeDisplay popup;
+	private PopupDisplay popup;
 	private List<Kahoot> myKahoots;	
 	
-	public PracticeController()
+	public Controller()
 	{
 		myKahoots = new ArrayList<Kahoot>();
-		popup = new PracticeDisplay();
+		popup = new PopupDisplay();
 	}
 	
 	/**
@@ -101,5 +101,15 @@ public class PracticeController
 			popup.displayText(myKahoots.get(0) + "is the first Kahoot");
 			
 		}
+	}
+	
+	public PopupDisplay getPopup()
+	{
+		return popup;
+	}
+	
+	public ArrayList<Kahoot> getMyKahoots()
+	{
+		return(ArrayList<Kahoot>) myKahoots;
 	}
 }

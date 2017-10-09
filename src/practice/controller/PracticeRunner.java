@@ -1,12 +1,12 @@
 package practice.controller;
 
-import practice.controller.PracticeController;
+import practice.controller.Controller;
 
 public class PracticeRunner
 {
 	public static void main(String [] args)
 	{
-		PracticeController appController = new PracticeController();
+		Controller appController = new Controller();
 		appController.start();
 	}
 }
