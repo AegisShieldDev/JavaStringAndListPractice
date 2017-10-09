@@ -22,8 +22,9 @@ public class PracticeController
 	public void start()
 	{
 		fillTheList();
-		showTheList();
-		changeTheList();
+		//showTheList();
+		//changeTheList();
+		shuffleTheList();
 	}
 	
 	private void showTheList()
@@ -59,9 +60,6 @@ public class PracticeController
 		}
 		System.exit(0);
 	}
-	/**
-	 * Creates Kahoots
-	 */
 	private void fillTheList()
 	{		
 		Kahoot fiftyStates 		= new Kahoot("Kashish",	50, "The fifty United States");
@@ -87,5 +85,20 @@ public class PracticeController
 		popup.displayText("The list is still: " + myKahoots.size() + " items big.");
 		removed = myKahoots.set(2, new Kahoot());
 		popup.displayText("the kahoot by " + removed.getCreator() + " was replaced with on by: " + myKahoots.get(2).getCreator());
+	}
+	private void shuffleTheList()
+	{ 
+		for (int loop = 0; loop<(myKahoots.size()-1); loop++)
+		{
+			int randomKahoot = ((int)(Math.random())(myKahoots.size()));
+			
+			popup.displayText("The current list size is: " + myKahoots.size());
+			popup.displayText(randomKahoot + "randomKahoot");
+			Kahoot removed = myKahoots.remove(randomKahoot);
+			myKahoots.add(0, removed);
+			popup.displayText("I removed Kahoot number " + randomKahoot + " out of " + myKahoots.size());
+			popup.displayText("The list now has: " + myKahoots.size() + " items inside. loop");
+			
+		}
 	}
 }
