@@ -23,6 +23,7 @@ public class PracticeController
 	{
 		fillTheList();
 		showTheList();
+		changeTheList();
 	}
 	
 	private void showTheList()
@@ -58,7 +59,6 @@ public class PracticeController
 		}
 		System.exit(0);
 	}
-	
 	/**
 	 * Creates Kahoots
 	 */
@@ -75,5 +75,17 @@ public class PracticeController
 		myKahoots.add(bigQuiz);
 		myKahoots.add(animalColor);
 		myKahoots.add(presidents);
+	}
+	private void changeTheList()
+	{
+		popup.displayText("The current list size is: " + myKahoots.size());
+		Kahoot removed = myKahoots.remove(3);
+		popup.displayText("I removed Kahoot by " + removed.getCreator());
+		popup.displayText("The list now has: " + myKahoots.size() + " items inside.");
+		myKahoots.add(0, removed);
+		
+		popup.displayText("The list is still: " + myKahoots.size() + " items big.");
+		removed = myKahoots.set(2, new Kahoot());
+		popup.displayText("the kahoot by " + removed.getCreator() + " was replaced with on by: " + myKahoots.get(2).getCreator());
 	}
 }
