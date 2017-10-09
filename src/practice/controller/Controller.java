@@ -22,8 +22,8 @@ public class Controller
 	public void start()
 	{
 		fillTheList();
-		//showTheList();
-		//changeTheList();
+		showTheList();
+		changeTheList();
 		shuffleTheList();
 	}
 	
