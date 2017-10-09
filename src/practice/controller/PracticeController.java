@@ -90,14 +90,15 @@ public class PracticeController
 	{ 
 		for (int loop = 0; loop<(myKahoots.size()-1); loop++)
 		{
-			int randomKahoot = ((int)(Math.random())(myKahoots.size()));
+			int randomKahoot = ((int)(Math.random()*myKahoots.size()));
 			
 			popup.displayText("The current list size is: " + myKahoots.size());
 			popup.displayText(randomKahoot + "randomKahoot");
 			Kahoot removed = myKahoots.remove(randomKahoot);
 			myKahoots.add(0, removed);
 			popup.displayText("I removed Kahoot number " + randomKahoot + " out of " + myKahoots.size());
-			popup.displayText("The list now has: " + myKahoots.size() + " items inside. loop");
+			popup.displayText("The list now has: " + myKahoots.size() + " items inside.");
+			popup.displayText(myKahoots.get(0) + "is the first Kahoot");
 			
 		}
 	}
