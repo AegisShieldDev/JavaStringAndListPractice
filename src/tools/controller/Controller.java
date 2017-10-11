@@ -88,6 +88,20 @@ public class Controller
 		removed = myKahoots.set(2, new Kahoot());
 		popup.displayText("the kahoot by " + removed.getCreator() + " was replaced with on by: " + myKahoots.get(2).getCreator());
 	}
+	public int findMaxLength(ArrayList<String> myList)
+	{
+		int min = Integer.MAX_VALUE;
+		
+		for(int index = 0; index < myList.size(); index++)
+		{
+			if(myList.get(index).length() < min)
+			{
+				min = myList.get(index).length();
+			}
+		}
+		
+		return min;
+	}
 	private void shuffleTheList()
 	{ 
 		for (int loop = 0; loop<(myKahoots.size()-1); loop++)
