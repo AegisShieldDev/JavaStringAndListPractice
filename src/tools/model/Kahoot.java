@@ -1,4 +1,4 @@
-package practice.model;
+package tools.model;
 
 public class Kahoot
 {

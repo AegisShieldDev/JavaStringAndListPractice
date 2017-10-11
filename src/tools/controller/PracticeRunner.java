@@ -1,6 +1,4 @@
-package practice.controller;
-
-import practice.controller.Controller;
+package tools.controller;
 
 public class PracticeRunner
 {

@@ -1,9 +1,10 @@
-package practice.controller;
+package tools.controller;
 
-import java.util.List;
 import java.util.ArrayList;
-import practice.model.Kahoot;
-import practice.view.PopupDisplay;
+import java.util.List;
+
+import tools.model.Kahoot;
+import tools.view.PopupDisplay;
 
 public class Controller
 {
@@ -45,20 +46,21 @@ public class Controller
 					popup.displayText("wow nobody does a lot");
 				}
 			}
-			
+			/*
 			for (int currentLetterIndex = 0; currentLetterIndex < currentCreator.length(); currentLetterIndex += 1)
 			{
 				popup.displayText(currentCreator.substring(currentLetterIndex, currentLetterIndex + 1));
 			}
-			
+			*/
 			String topic = currentKahoot.getTopic();
-			
+			/*
 			for (int letter = topic.length() - 1; letter >= 0; letter -= 1)
 			{
 				popup.displayText(topic.substring(letter, letter + 1));
 			}
+			*/
 		}
-		System.exit(0);
+		//System.exit(0);
 	}
 	private void fillTheList()
 	{		
